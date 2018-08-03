@@ -1,0 +1,707 @@
+03-Aug-2018 14:09:22.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.32
+03-Aug-2018 14:09:22.035 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 2 2016 19:34:53 UTC
+03-Aug-2018 14:09:22.035 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.32.0
+03-Aug-2018 14:09:22.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+03-Aug-2018 14:09:22.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+03-Aug-2018 14:09:22.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+03-Aug-2018 14:09:22.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\jdk\jdk_1.8.0.77\jre
+03-Aug-2018 14:09:22.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_77-b03
+03-Aug-2018 14:09:22.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+03-Aug-2018 14:09:22.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32
+03-Aug-2018 14:09:22.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32
+03-Aug-2018 14:09:22.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\conf\logging.properties
+03-Aug-2018 14:09:22.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Aug-2018 14:09:22.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\endorsed
+03-Aug-2018 14:09:22.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32
+03-Aug-2018 14:09:22.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32
+03-Aug-2018 14:09:22.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\temp
+03-Aug-2018 14:09:22.039 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.4 using APR version 1.5.1.
+03-Aug-2018 14:09:22.039 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+03-Aug-2018 14:09:22.661 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2e 3 Dec 2015)
+03-Aug-2018 14:09:23.122 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8090"]
+03-Aug-2018 14:09:23.135 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+03-Aug-2018 14:09:23.137 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1491 ms
+03-Aug-2018 14:09:23.177 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+03-Aug-2018 14:09:23.178 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.32
+03-Aug-2018 14:09:23.199 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\docs
+03-Aug-2018 14:09:23.234 SEVERE [localhost-startStop-1] org.apache.tomcat.util.digester.Digester.startElement Begin event threw exception
+ java.lang.ClassNotFoundException: com.r.tomcat.session.management.RequestSessionHandlerValve
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.tomcat.util.digester.ObjectCreateRule.begin(ObjectCreateRule.java:116)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1344)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:541)
+	at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:481)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:740)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:316)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:394)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:110)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1091)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1830)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+03-Aug-2018 14:09:23.236 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processContextConfig Parse error in context.xml for /docs
+ org.xml.sax.SAXParseException; systemId: file:/C:/Users/acer/Desktop/jq/apache-tomcat-8.0.32/conf/context.xml; lineNumber: 25; columnNumber: 84; Error at (25, 84) : com.r.tomcat.session.management.RequestSessionHandlerValve
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1908)
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1940)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1181)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1344)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:541)
+	at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:481)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:740)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:316)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:394)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:110)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1091)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1830)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.r.tomcat.session.management.RequestSessionHandlerValve
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.tomcat.util.digester.ObjectCreateRule.begin(ObjectCreateRule.java:116)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	... 31 more
+
+03-Aug-2018 14:09:23.241 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processContextConfig Occurred at line 25 column 84
+03-Aug-2018 14:09:23.386 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+03-Aug-2018 14:09:23.396 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+03-Aug-2018 14:09:23.497 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/docs] startup failed due to previous errors
+03-Aug-2018 14:09:23.509 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\docs has finished in 309 ms
+03-Aug-2018 14:09:23.509 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\examples
+03-Aug-2018 14:09:23.511 SEVERE [localhost-startStop-1] org.apache.tomcat.util.digester.Digester.startElement Begin event threw exception
+ java.lang.ClassNotFoundException: com.r.tomcat.session.management.RequestSessionHandlerValve
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.tomcat.util.digester.ObjectCreateRule.begin(ObjectCreateRule.java:116)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1344)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:541)
+	at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:481)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:740)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:316)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:394)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:110)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1091)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1830)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+03-Aug-2018 14:09:23.512 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processContextConfig Parse error in context.xml for /examples
+ org.xml.sax.SAXParseException; systemId: file:/C:/Users/acer/Desktop/jq/apache-tomcat-8.0.32/conf/context.xml; lineNumber: 25; columnNumber: 84; Error at (25, 84) : com.r.tomcat.session.management.RequestSessionHandlerValve
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1908)
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1940)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1181)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1344)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:541)
+	at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:481)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:740)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:316)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:394)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:110)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1091)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1830)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.r.tomcat.session.management.RequestSessionHandlerValve
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.tomcat.util.digester.ObjectCreateRule.begin(ObjectCreateRule.java:116)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	... 31 more
+
+03-Aug-2018 14:09:23.513 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processContextConfig Occurred at line 25 column 84
+03-Aug-2018 14:09:23.724 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+03-Aug-2018 14:09:23.726 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+03-Aug-2018 14:09:23.727 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/examples] startup failed due to previous errors
+03-Aug-2018 14:09:23.733 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\examples has finished in 224 ms
+03-Aug-2018 14:09:23.733 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\host-manager
+03-Aug-2018 14:09:23.739 SEVERE [localhost-startStop-1] org.apache.tomcat.util.digester.Digester.startElement Begin event threw exception
+ java.lang.ClassNotFoundException: com.r.tomcat.session.management.RequestSessionHandlerValve
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.tomcat.util.digester.ObjectCreateRule.begin(ObjectCreateRule.java:116)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1344)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:541)
+	at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:481)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:740)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:316)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:394)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:110)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1091)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1830)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+03-Aug-2018 14:09:23.740 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processContextConfig Parse error in context.xml for /host-manager
+ org.xml.sax.SAXParseException; systemId: file:/C:/Users/acer/Desktop/jq/apache-tomcat-8.0.32/conf/context.xml; lineNumber: 25; columnNumber: 84; Error at (25, 84) : com.r.tomcat.session.management.RequestSessionHandlerValve
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1908)
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1940)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1181)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1344)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:541)
+	at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:481)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:740)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:316)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:394)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:110)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1091)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1830)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.r.tomcat.session.management.RequestSessionHandlerValve
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.tomcat.util.digester.ObjectCreateRule.begin(ObjectCreateRule.java:116)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	... 31 more
+
+03-Aug-2018 14:09:23.743 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processContextConfig Occurred at line 25 column 84
+03-Aug-2018 14:09:23.744 WARNING [localhost-startStop-1] org.apache.tomcat.util.digester.Digester.endElement   No rules found matching 'Context/Valve/Context'.
+03-Aug-2018 14:09:23.766 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+03-Aug-2018 14:09:23.767 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+03-Aug-2018 14:09:23.769 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/host-manager] startup failed due to previous errors
+03-Aug-2018 14:09:23.777 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\host-manager has finished in 44 ms
+03-Aug-2018 14:09:23.777 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\manager
+03-Aug-2018 14:09:23.783 SEVERE [localhost-startStop-1] org.apache.tomcat.util.digester.Digester.startElement Begin event threw exception
+ java.lang.ClassNotFoundException: com.r.tomcat.session.management.RequestSessionHandlerValve
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.tomcat.util.digester.ObjectCreateRule.begin(ObjectCreateRule.java:116)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1344)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:541)
+	at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:481)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:740)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:316)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:394)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:110)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1091)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1830)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+03-Aug-2018 14:09:23.784 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processContextConfig Parse error in context.xml for /manager
+ org.xml.sax.SAXParseException; systemId: file:/C:/Users/acer/Desktop/jq/apache-tomcat-8.0.32/conf/context.xml; lineNumber: 25; columnNumber: 84; Error at (25, 84) : com.r.tomcat.session.management.RequestSessionHandlerValve
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1908)
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1940)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1181)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1344)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:541)
+	at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:481)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:740)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:316)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:394)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:110)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1091)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1830)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.r.tomcat.session.management.RequestSessionHandlerValve
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.tomcat.util.digester.ObjectCreateRule.begin(ObjectCreateRule.java:116)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	... 31 more
+
+03-Aug-2018 14:09:23.785 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processContextConfig Occurred at line 25 column 84
+03-Aug-2018 14:09:23.787 WARNING [localhost-startStop-1] org.apache.tomcat.util.digester.Digester.endElement   No rules found matching 'Context/Valve/Context'.
+03-Aug-2018 14:09:23.807 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+03-Aug-2018 14:09:23.808 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+03-Aug-2018 14:09:23.811 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/manager] startup failed due to previous errors
+03-Aug-2018 14:09:23.816 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\manager has finished in 38 ms
+03-Aug-2018 14:09:23.816 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\ROOT
+03-Aug-2018 14:09:23.818 SEVERE [localhost-startStop-1] org.apache.tomcat.util.digester.Digester.startElement Begin event threw exception
+ java.lang.ClassNotFoundException: com.r.tomcat.session.management.RequestSessionHandlerValve
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.tomcat.util.digester.ObjectCreateRule.begin(ObjectCreateRule.java:116)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1344)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:541)
+	at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:481)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:740)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:316)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:394)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:110)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1091)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1830)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+03-Aug-2018 14:09:23.820 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processContextConfig Parse error in context.xml for 
+ org.xml.sax.SAXParseException; systemId: file:/C:/Users/acer/Desktop/jq/apache-tomcat-8.0.32/conf/context.xml; lineNumber: 25; columnNumber: 84; Error at (25, 84) : com.r.tomcat.session.management.RequestSessionHandlerValve
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1908)
+	at org.apache.tomcat.util.digester.Digester.createSAXException(Digester.java:1940)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1181)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1344)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2787)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.ContextConfig.processContextConfig(ContextConfig.java:541)
+	at org.apache.catalina.startup.ContextConfig.contextConfig(ContextConfig.java:481)
+	at org.apache.catalina.startup.ContextConfig.init(ContextConfig.java:740)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:316)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:394)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:110)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:136)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1091)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1830)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.ClassNotFoundException: com.r.tomcat.session.management.RequestSessionHandlerValve
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.apache.tomcat.util.digester.ObjectCreateRule.begin(ObjectCreateRule.java:116)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	... 31 more
+
+03-Aug-2018 14:09:23.826 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processContextConfig Occurred at line 25 column 84
+03-Aug-2018 14:09:23.842 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.configureStart Marking this application unavailable due to previous error(s)
+03-Aug-2018 14:09:23.843 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more components marked the context as not correctly configured
+03-Aug-2018 14:09:23.844 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [] startup failed due to previous errors
+03-Aug-2018 14:09:23.848 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\ROOT has finished in 32 ms
+03-Aug-2018 14:09:23.851 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8090"]
+03-Aug-2018 14:09:23.908 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+03-Aug-2018 14:09:23.954 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 816 ms
+03-Aug-2018 14:16:03.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.32
+03-Aug-2018 14:16:03.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 2 2016 19:34:53 UTC
+03-Aug-2018 14:16:03.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.32.0
+03-Aug-2018 14:16:03.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+03-Aug-2018 14:16:03.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+03-Aug-2018 14:16:03.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+03-Aug-2018 14:16:03.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\jdk\jdk_1.8.0.77\jre
+03-Aug-2018 14:16:03.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_77-b03
+03-Aug-2018 14:16:03.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+03-Aug-2018 14:16:03.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32
+03-Aug-2018 14:16:03.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32
+03-Aug-2018 14:16:03.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\conf\logging.properties
+03-Aug-2018 14:16:03.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Aug-2018 14:16:03.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\endorsed
+03-Aug-2018 14:16:03.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32
+03-Aug-2018 14:16:03.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32
+03-Aug-2018 14:16:03.605 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\temp
+03-Aug-2018 14:16:03.606 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.4 using APR version 1.5.1.
+03-Aug-2018 14:16:03.606 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+03-Aug-2018 14:16:04.239 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2e 3 Dec 2015)
+03-Aug-2018 14:16:04.348 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8090"]
+03-Aug-2018 14:16:04.365 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+03-Aug-2018 14:16:04.368 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1077 ms
+03-Aug-2018 14:16:04.401 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+03-Aug-2018 14:16:04.401 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.32
+03-Aug-2018 14:16:04.414 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\docs
+03-Aug-2018 14:16:04.915 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Aug-2018 14:16:05.060 INFO [localhost-startStop-1] tomcat.request.session.redis.SessionManager.startInternal The sessions will expire after 1800 seconds.
+03-Aug-2018 14:16:05.080 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\docs has finished in 666 ms
+03-Aug-2018 14:16:05.080 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\examples
+03-Aug-2018 14:16:05.694 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Aug-2018 14:16:05.744 INFO [localhost-startStop-1] tomcat.request.session.redis.SessionManager.startInternal The sessions will expire after 1800 seconds.
+03-Aug-2018 14:16:05.757 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\examples has finished in 677 ms
+03-Aug-2018 14:16:05.757 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\host-manager
+03-Aug-2018 14:16:05.932 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Aug-2018 14:16:05.941 INFO [localhost-startStop-1] tomcat.request.session.redis.SessionManager.startInternal The sessions will expire after 1800 seconds.
+03-Aug-2018 14:16:05.944 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\host-manager has finished in 187 ms
+03-Aug-2018 14:16:05.944 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\manager
+03-Aug-2018 14:16:06.152 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Aug-2018 14:16:06.159 INFO [localhost-startStop-1] tomcat.request.session.redis.SessionManager.startInternal The sessions will expire after 1800 seconds.
+03-Aug-2018 14:16:06.161 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\manager has finished in 217 ms
+03-Aug-2018 14:16:06.161 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\ROOT
+03-Aug-2018 14:16:06.331 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Aug-2018 14:16:06.340 INFO [localhost-startStop-1] tomcat.request.session.redis.SessionManager.startInternal The sessions will expire after 1800 seconds.
+03-Aug-2018 14:16:06.342 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\acer\Desktop\jq\apache-tomcat-8.0.32\webapps\ROOT has finished in 181 ms
+03-Aug-2018 14:16:06.347 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8090"]
+03-Aug-2018 14:16:06.408 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+03-Aug-2018 14:16:06.455 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 2086 ms
+03-Aug-2018 14:17:24.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.32
+03-Aug-2018 14:17:24.161 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 2 2016 19:34:53 UTC
+03-Aug-2018 14:17:24.161 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.32.0
+03-Aug-2018 14:17:24.161 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+03-Aug-2018 14:17:24.162 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+03-Aug-2018 14:17:24.162 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+03-Aug-2018 14:17:24.162 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\jdk\jdk_1.8.0.77\jre
+03-Aug-2018 14:17:24.163 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_77-b03
+03-Aug-2018 14:17:24.163 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+03-Aug-2018 14:17:24.163 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\acer\Desktop\jq\tomcat1
+03-Aug-2018 14:17:24.163 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\acer\Desktop\jq\tomcat1
+03-Aug-2018 14:17:24.165 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\acer\Desktop\jq\tomcat1\conf\logging.properties
+03-Aug-2018 14:17:24.165 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Aug-2018 14:17:24.165 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\acer\Desktop\jq\tomcat1\endorsed
+03-Aug-2018 14:17:24.165 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\acer\Desktop\jq\tomcat1
+03-Aug-2018 14:17:24.165 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\acer\Desktop\jq\tomcat1
+03-Aug-2018 14:17:24.165 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\acer\Desktop\jq\tomcat1\temp
+03-Aug-2018 14:17:24.166 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.4 using APR version 1.5.1.
+03-Aug-2018 14:17:24.167 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+03-Aug-2018 14:17:24.819 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2e 3 Dec 2015)
+03-Aug-2018 14:17:24.926 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8090"]
+03-Aug-2018 14:17:24.937 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+03-Aug-2018 14:17:24.938 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1081 ms
+03-Aug-2018 14:17:24.968 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+03-Aug-2018 14:17:24.969 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.32
+03-Aug-2018 14:17:24.981 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\acer\Desktop\jq\tomcat1\webapps\ROOT
+03-Aug-2018 14:17:25.430 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Aug-2018 14:17:25.574 INFO [localhost-startStop-1] tomcat.request.session.redis.SessionManager.startInternal The sessions will expire after 1800 seconds.
+03-Aug-2018 14:17:25.591 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\acer\Desktop\jq\tomcat1\webapps\ROOT has finished in 609 ms
+03-Aug-2018 14:17:25.593 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8090"]
+03-Aug-2018 14:17:25.650 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+03-Aug-2018 14:17:25.697 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 757 ms
+03-Aug-2018 14:18:05.342 SEVERE [http-apr-8090-exec-3] tomcat.request.session.data.cache.impl.RedisDataCache$RedisCacheUtil.setnx Jedis connection failed, retrying...1
+03-Aug-2018 14:18:06.359 SEVERE [http-apr-8090-exec-3] tomcat.request.session.data.cache.impl.RedisDataCache$RedisCacheUtil.setnx Jedis connection failed, retrying...2
+03-Aug-2018 14:18:07.364 SEVERE [http-apr-8090-exec-3] tomcat.request.session.data.cache.impl.RedisDataCache$RedisCacheUtil.setnx Jedis connection failed, retrying...3
+03-Aug-2018 14:21:35.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.32
+03-Aug-2018 14:21:35.673 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 2 2016 19:34:53 UTC
+03-Aug-2018 14:21:35.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.32.0
+03-Aug-2018 14:21:35.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+03-Aug-2018 14:21:35.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+03-Aug-2018 14:21:35.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+03-Aug-2018 14:21:35.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\jdk\jdk_1.8.0.77\jre
+03-Aug-2018 14:21:35.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_77-b03
+03-Aug-2018 14:21:35.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+03-Aug-2018 14:21:35.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 14:21:35.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 14:21:35.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\acer\Desktop\jq\tomcat2\conf\logging.properties
+03-Aug-2018 14:21:35.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Aug-2018 14:21:35.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\acer\Desktop\jq\tomcat2\endorsed
+03-Aug-2018 14:21:35.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 14:21:35.677 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 14:21:35.677 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\acer\Desktop\jq\tomcat2\temp
+03-Aug-2018 14:21:35.678 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.4 using APR version 1.5.1.
+03-Aug-2018 14:21:35.679 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+03-Aug-2018 14:21:36.305 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2e 3 Dec 2015)
+03-Aug-2018 14:21:36.410 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8091"]
+03-Aug-2018 14:21:36.422 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8007"]
+03-Aug-2018 14:21:36.423 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1057 ms
+03-Aug-2018 14:21:36.454 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+03-Aug-2018 14:21:36.454 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.32
+03-Aug-2018 14:21:36.467 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\acer\Desktop\jq\tomcat2\webapps\ROOT
+03-Aug-2018 14:21:36.923 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Aug-2018 14:21:37.061 INFO [localhost-startStop-1] tomcat.request.session.redis.SessionManager.startInternal The sessions will expire after 1800 seconds.
+03-Aug-2018 14:21:37.077 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\acer\Desktop\jq\tomcat2\webapps\ROOT has finished in 609 ms
+03-Aug-2018 14:21:37.079 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8091"]
+03-Aug-2018 14:21:37.144 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8007"]
+03-Aug-2018 14:21:37.194 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 769 ms
+03-Aug-2018 16:22:15.593 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.32
+03-Aug-2018 16:22:15.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 2 2016 19:34:53 UTC
+03-Aug-2018 16:22:15.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.32.0
+03-Aug-2018 16:22:15.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+03-Aug-2018 16:22:15.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+03-Aug-2018 16:22:15.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+03-Aug-2018 16:22:15.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\jdk\jdk_1.8.0.77\jre
+03-Aug-2018 16:22:15.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_77-b03
+03-Aug-2018 16:22:15.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+03-Aug-2018 16:22:15.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:22:15.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:22:15.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\acer\Desktop\jq\tomcat2\conf\logging.properties
+03-Aug-2018 16:22:15.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Aug-2018 16:22:15.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\acer\Desktop\jq\tomcat2\endorsed
+03-Aug-2018 16:22:15.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:22:15.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:22:15.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\acer\Desktop\jq\tomcat2\temp
+03-Aug-2018 16:22:15.599 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.4 using APR version 1.5.1.
+03-Aug-2018 16:22:15.600 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+03-Aug-2018 16:22:16.264 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2e 3 Dec 2015)
+03-Aug-2018 16:22:42.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.32
+03-Aug-2018 16:22:42.018 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 2 2016 19:34:53 UTC
+03-Aug-2018 16:22:42.018 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.32.0
+03-Aug-2018 16:22:42.018 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+03-Aug-2018 16:22:42.018 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+03-Aug-2018 16:22:42.018 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+03-Aug-2018 16:22:42.018 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\jdk\jdk_1.8.0.77\jre
+03-Aug-2018 16:22:42.018 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_77-b03
+03-Aug-2018 16:22:42.018 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+03-Aug-2018 16:22:42.019 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:22:42.019 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:22:42.019 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\acer\Desktop\jq\tomcat2\conf\logging.properties
+03-Aug-2018 16:22:42.019 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Aug-2018 16:22:42.019 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\acer\Desktop\jq\tomcat2\endorsed
+03-Aug-2018 16:22:42.019 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:22:42.020 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:22:42.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\acer\Desktop\jq\tomcat2\temp
+03-Aug-2018 16:22:42.023 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.4 using APR version 1.5.1.
+03-Aug-2018 16:22:42.023 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+03-Aug-2018 16:22:42.660 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2e 3 Dec 2015)
+03-Aug-2018 16:22:42.777 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8091"]
+03-Aug-2018 16:22:42.790 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8007"]
+03-Aug-2018 16:22:42.792 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1091 ms
+03-Aug-2018 16:22:42.836 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+03-Aug-2018 16:22:42.837 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.32
+03-Aug-2018 16:22:42.850 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\acer\Desktop\jq\tomcat2\webapps\ROOT
+03-Aug-2018 16:22:43.334 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Aug-2018 16:22:43.481 INFO [localhost-startStop-1] tomcat.request.session.redis.SessionManager.startInternal The sessions will expire after 1800 seconds.
+03-Aug-2018 16:22:43.500 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\acer\Desktop\jq\tomcat2\webapps\ROOT has finished in 649 ms
+03-Aug-2018 16:22:43.503 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8091"]
+03-Aug-2018 16:22:43.552 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8007"]
+03-Aug-2018 16:22:43.588 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 795 ms
+03-Aug-2018 16:34:12.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.32
+03-Aug-2018 16:34:12.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 2 2016 19:34:53 UTC
+03-Aug-2018 16:34:12.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.32.0
+03-Aug-2018 16:34:12.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+03-Aug-2018 16:34:12.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+03-Aug-2018 16:34:12.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+03-Aug-2018 16:34:12.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\jdk\jdk_1.8.0.77\jre
+03-Aug-2018 16:34:12.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_77-b03
+03-Aug-2018 16:34:12.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+03-Aug-2018 16:34:12.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:34:12.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:34:12.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\acer\Desktop\jq\tomcat2\conf\logging.properties
+03-Aug-2018 16:34:12.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Aug-2018 16:34:12.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\acer\Desktop\jq\tomcat2\endorsed
+03-Aug-2018 16:34:12.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:34:12.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:34:12.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\acer\Desktop\jq\tomcat2\temp
+03-Aug-2018 16:34:12.469 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.4 using APR version 1.5.1.
+03-Aug-2018 16:34:12.470 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+03-Aug-2018 16:34:13.133 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2e 3 Dec 2015)
+03-Aug-2018 16:34:13.243 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8091"]
+03-Aug-2018 16:34:13.255 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8007"]
+03-Aug-2018 16:34:13.257 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1111 ms
+03-Aug-2018 16:34:13.287 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+03-Aug-2018 16:34:13.288 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.32
+03-Aug-2018 16:34:13.301 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\acer\Desktop\jq\tomcat2\webapps\ROOT
+03-Aug-2018 16:34:13.759 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Aug-2018 16:34:13.898 INFO [localhost-startStop-1] tomcat.request.session.redis.SessionManager.startInternal The sessions will expire after 1800 seconds.
+03-Aug-2018 16:34:13.915 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\acer\Desktop\jq\tomcat2\webapps\ROOT has finished in 614 ms
+03-Aug-2018 16:34:13.917 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8091"]
+03-Aug-2018 16:34:13.967 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8007"]
+03-Aug-2018 16:34:14.003 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 744 ms
+03-Aug-2018 16:36:43.802 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.32
+03-Aug-2018 16:36:43.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 2 2016 19:34:53 UTC
+03-Aug-2018 16:36:43.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.32.0
+03-Aug-2018 16:36:43.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+03-Aug-2018 16:36:43.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+03-Aug-2018 16:36:43.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+03-Aug-2018 16:36:43.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\jdk\jdk_1.8.0.77\jre
+03-Aug-2018 16:36:43.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_77-b03
+03-Aug-2018 16:36:43.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+03-Aug-2018 16:36:43.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:36:43.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:36:43.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\acer\Desktop\jq\tomcat2\conf\logging.properties
+03-Aug-2018 16:36:43.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-Aug-2018 16:36:43.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\acer\Desktop\jq\tomcat2\endorsed
+03-Aug-2018 16:36:43.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:36:43.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\acer\Desktop\jq\tomcat2
+03-Aug-2018 16:36:43.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\acer\Desktop\jq\tomcat2\temp
+03-Aug-2018 16:36:43.808 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library 1.2.4 using APR version 1.5.1.
+03-Aug-2018 16:36:43.809 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+03-Aug-2018 16:36:44.490 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.2e 3 Dec 2015)
+03-Aug-2018 16:36:44.599 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8091"]
+03-Aug-2018 16:36:44.614 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8007"]
+03-Aug-2018 16:36:44.615 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1130 ms
+03-Aug-2018 16:36:44.647 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+03-Aug-2018 16:36:44.647 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.32
+03-Aug-2018 16:36:44.659 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\acer\Desktop\jq\tomcat2\webapps\ROOT
+03-Aug-2018 16:36:45.145 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+03-Aug-2018 16:36:45.316 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [118] milliseconds.
+03-Aug-2018 16:36:45.345 INFO [localhost-startStop-1] tomcat.request.session.redis.SessionManager.startInternal The sessions will expire after 1800 seconds.
+03-Aug-2018 16:36:45.365 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\acer\Desktop\jq\tomcat2\webapps\ROOT has finished in 706 ms
+03-Aug-2018 16:36:45.367 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8091"]
+03-Aug-2018 16:36:45.418 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8007"]
+03-Aug-2018 16:36:45.457 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 840 ms

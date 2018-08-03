@@ -1,0 +1,2 @@
+04-Sep-2016 14:17:07.273 INFO [http-apr-8080-exec-10] org.apache.catalina.core.ApplicationContext.log HTMLHostManager: list: Listing hosts for engine [Catalina]
+04-Sep-2016 14:33:47.139 INFO [http-apr-8090-exec-7] org.apache.catalina.core.ApplicationContext.log HTMLHostManager: list: Listing hosts for engine [Catalina]

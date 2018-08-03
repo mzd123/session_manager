@@ -1,0 +1,2 @@
+2018/08/03 14:49:54 [error] 14248#6456: *38 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while connecting to upstream, client: 127.0.0.1, server: www.tuesdayma.com, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8090/", host: "www.tuesdayma.com"
+2018/08/03 16:35:58 [notice] 15440#15444: signal process started
